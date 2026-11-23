@@ -1,0 +1,42 @@
+name: StalkerKnowledge
+options:
+  bundleIdPrefix: com.stalker.knowledge
+  mentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.4"
+  createIntermediateGroups: true
+  generateMultipleProjects: false
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGN_IDENTITY: ""
+    DEVELOPMENT_TEAM: ""
+    PROVISIONING_PROFILE_SPECIFIER: ""
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: NO
+    GCC_GENERATE_DEBUGGING_SYMBOLS: YES
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    MTL_FAST_MATH: YES
+
+targets:
+  StalkerKnowledge:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    resources:
+      - path: Resources
+    settings:
+      base:
+        INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        PRODUCT_BUNDLE_IDENTIFIER: com.stalker.knowledge
+        PRODUCT_NAME: StalkerKnowledge
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.0
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies: []
